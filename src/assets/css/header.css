@@ -1,0 +1,109 @@
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* background-color: rgba(255, 255, 255, 0.9); */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    transition: background-color 0.3s ease, padding 0.3s ease; 
+    backdrop-filter: blur(6px);
+}
+
+header.scrolled {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 3px;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif; 
+}
+
+.logo h1 {
+    font-size: 3.5vh; 
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.logo p {
+    font-size: 1.5vh; 
+    color: #666;
+    font-style: italic;
+}
+
+nav {
+    width: 50%;
+    text-align: center;
+    user-select: none;
+}
+
+nav a {
+    font-size: 1.5vh; 
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    outline: none;
+    user-select: none;
+}
+
+nav a.active {
+    font-size: 2.0vh; 
+    /* text-decoration: underline; */
+    font-weight: bold;
+    /* Dodatkowe style dla aktywnego linku */
+    outline: none;
+    user-select: none;
+}
+
+.social-icons {
+    width: 50%;
+    text-align: right;
+    user-select: none;
+}
+
+.social-icons a {
+    color: black;
+    margin-right: 10px;
+    font-size:  1.5vh; 
+    user-select: none;
+}
+
+@media (max-width:768px) {
+    header {
+        padding: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo, nav {
+        width: auto; 
+        text-align: center; 
+        margin: 0 auto; 
+    }
+
+    .logo h1 {
+        font-size: 2.5vh; 
+    }
+
+    .logo p {
+        font-size: 1.5vh; 
+    }
+
+    .social-icons {
+        display: none; 
+    }
+
+    header.scrolled .logo h1,
+    header.scrolled .logo p,
+    header.scrolled nav a,
+    header.scrolled .social-icons a {
+        color: rgba(0, 0, 0, 0.6); 
+    }
+}

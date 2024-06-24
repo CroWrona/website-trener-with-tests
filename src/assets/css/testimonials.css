@@ -1,0 +1,51 @@
+.testimonials {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    padding-left: 40px;
+    padding-right: 40px; 
+    text-align: center;
+}
+
+button.prev,
+button.next {
+    background-color: transparent;
+    border: none;
+    color: #777;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+button.prev {
+    left: 10px;
+}
+
+button.next {
+    right: 10px;
+}
+
+.testimonial {
+    text-align: center; 
+    display: none;
+}
+
+.testimonial.active {
+    display: block;
+}
+
+.testimonial p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.client-name {
+    font-style: italic;
+    color: #777;
+}

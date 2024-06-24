@@ -1,0 +1,24 @@
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgba(89, 151, 244, 0.5);
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    user-select: none;
+    outline: none;
+}
+
+.scroll-to-top:hover {
+    background-color: #0056b3;
+}
+
+.scroll-to-top.move-up {
+    transform: translateY(-90px);
+}
