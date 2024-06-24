@@ -12,8 +12,12 @@ Run the application locally or on a server, according to your environment's requ
 
 # Automated Testing
 Unit Tests: 
+//
+//
 
 End-to-End Tests (e2e):
+//
+//
 
 ![](mobile.png)
 ![](pc.png)
